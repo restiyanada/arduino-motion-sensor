@@ -14,7 +14,7 @@ print "arduino detected"               #Confirms the device
 data = arduino.readline()  #Read data from the device
 
 #Inserting the data into table
-cursor.execute("INSERT INTO motionsensor (Voltage) VALUES (Voltage)", (data)) 
+cursor.execute("INSERT INTO motionsensor (voltage) VALUES (%s)", [data]) 
 #format ("INSERT INTO <table> (colomn) VALUES(type)",(initialized value)) 
 #Here initialized value is data, which is used to read device.
 
