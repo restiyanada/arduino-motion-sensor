@@ -9,7 +9,6 @@ plt.ion()
 cnt=0
 
 def makeFig(): # function that make our desired plot
-        plt.ylim(100,900)
         plt.title('Live Streaming Motion Sensor')
         plt.grid(True)
         plt.ylabel('motion')

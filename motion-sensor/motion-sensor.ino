@@ -10,7 +10,7 @@ void setup() {
 
 void loop() {
   int dataPIR = analogRead(PIR);
-  if(dataPIR>0){
+  if(dataPIR>500){
     digitalWrite(Pinled, HIGH);
     Serial.println(dataPIR);
     delay(100); 
